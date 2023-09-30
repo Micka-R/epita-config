@@ -6,7 +6,13 @@
     package = pkgs.i3;
     config = rec {
       modifier = "Mod4";
-      bars = [ ];
+      bars = [
+        {
+          position = "top";
+          statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs ${./i3status-rust.toml}";
+        }
+
+      ];
 
       gaps = {
         inner = 5;
@@ -73,7 +79,7 @@
         "${modifier}+Return" = "exec alacritty";
         "${modifier}+d" = "exec rofi -show drun";
         "Alt+Tab" = "exec rofi -show window";
-        "${modifier}+Esc" = "exec i3lock 1 1";
+        "${modifier}+Esc" = "exec i3lock";
         "${modifier}+q" = "kill";
         #"${modifier}+Shift+x" = "exec systemctl suspend";
         "${modifier}+r" = "mode resize";
@@ -91,22 +97,12 @@
           notification = false;
         }
         {
-          command = "feh --bg-fill ./background.png";
-          always = true;
-          notification = false;
-        }
-	      {
-	        command = "picom --experimental-backends --backend glx";
-	        always = true;
-	        notification = false;
-	      }
-        {
-          command = "nm-applet";
+          command = "feh --bg-fill ~/.config/home-manager/programs/background.png";
           always = true;
           notification = false;
         }
         {
-          command = "exec --no-startup-id unity-settings-daemon";
+          command = "picom --experimental-backends --backend glx";
           always = true;
           notification = false;
         }
