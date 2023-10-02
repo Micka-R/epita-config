@@ -8,8 +8,8 @@
       modifier = "Mod4";
       bars = [
         {
-          position = "top";
-          statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs ${./i3status-rust.toml}";
+          #position = "top";
+          #statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs ${./i3status-rust.toml}";
         }
 
       ];
@@ -25,6 +25,7 @@
       };
 
       window = {
+      	titlebar = false;
         border = 6;
       };
 

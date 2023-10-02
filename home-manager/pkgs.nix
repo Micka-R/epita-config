@@ -6,5 +6,11 @@
     neofetch
     fish
     neovim
+    polybar
+    fishPlugins.hydro
+    tldr
+    via
+    picom
+    betterlockscreen
   ];
 }

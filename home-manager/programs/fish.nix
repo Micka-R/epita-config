@@ -14,9 +14,9 @@
       rompiche = "while true; do i3lock && sleep 2700 && pkill i3lock; done";
     };
 
-    plugins = [
+    /*plugins = [
       {
-        name = "theme-lambda";
+        name = "fisher";
         src = pkgs.fetchFromGitHub {
           owner = "hasanozgan";
           repo = "theme-lambda";
@@ -25,7 +25,7 @@
         };
       }
     ];
-
+*/
     functions = { "fish_greeting" = builtins.readFile ./fish_greeting.fish; };
   };
 }
