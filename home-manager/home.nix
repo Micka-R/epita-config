@@ -21,6 +21,7 @@
     ./programs/fish.nix
     ./programs/polybar.nix
     ./programs/alacritty.nix
+    ./programs/nvim.nix
 #    ./epkgs.nix
   ];
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

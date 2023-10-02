@@ -8,7 +8,7 @@
       la = "ls -a";
       ".." = "cd ..";
       c = "clear";
-      vim = "nvim";
+      vi = "nvim";
       pkgs = "nvim ~/afs/epita-config/home-manager/pkgs.nix";
       hs = "home-manager switch";
       rompiche = "while true; do i3lock && sleep 2700 && pkill i3lock; done";

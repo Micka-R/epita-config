@@ -12,5 +12,6 @@
     via
     picom
     betterlockscreen
+    helix
   ];
 }
