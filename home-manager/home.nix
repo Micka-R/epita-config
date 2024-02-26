@@ -1,12 +1,13 @@
 { config, pkgs, ... }:
 
 {
+  
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "mickael.razzouk";
   home.homeDirectory = "/home/mickael.razzouk";
 
-  # This value determines the Home Manager release that your configuration is
+    # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
   #
@@ -14,11 +15,11 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "23.05"; # Please read the comment before changing.
-
+  
   imports = [
     ./pkgs.nix
     ./programs/i3.nix
-    ./programs/fish.nix
+    #./programs/fish.nix
     ./programs/polybar.nix
     ./programs/alacritty.nix
     ./programs/nvim.nix

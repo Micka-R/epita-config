@@ -22,10 +22,10 @@
 
       window.opacity = 0.80;
 
-      shell = {
-        program = "${pkgs.fish}/bin/fish";
+      #shell = {
+       # program = "${pkgs.fish}/bin/fish";
         #args = [ "--init-command" "echo; neofetch; echo" ];
-      };
+      #};
 
       colors = {
         primary = {

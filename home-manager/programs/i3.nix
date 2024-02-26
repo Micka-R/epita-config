@@ -80,7 +80,8 @@
         "${modifier}+Return" = "exec alacritty";
         "${modifier}+d" = "exec rofi -show drun";
         "Alt+Tab" = "exec rofi -show window";
-        "${modifier}+Esc" = "exec i3lock";
+        "${modifier}+l" = "exec betterlockscreen -l";
+        "${modifier}+Escape" = "exec betterlockscreen -l";
         "${modifier}+q" = "kill";
         #"${modifier}+Shift+x" = "exec systemctl suspend";
         "${modifier}+r" = "mode resize";
@@ -93,7 +94,7 @@
           notification = false;
         }
         {
-          command = "polybar top &";
+          command = "pkill polybar; polybar top &";
           always = true;
           notification = false;
         }
@@ -103,7 +104,7 @@
           notification = false;
         }
         {
-          command = "picom --experimental-backends --backend glx";
+          command = "picom";
           always = true;
           notification = false;
         }
